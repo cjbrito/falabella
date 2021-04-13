@@ -14,7 +14,7 @@ class NumbersTest extends TestCase
    public function testNumberWordReplace(){
       $this->obj->getList(100);
       $this->assertEquals('string', $this->obj->getStringList());
-      $this->assertEmpty("",$this->obj->getStringList());
+      $this->assertEquals("",$this->obj->getStringList());
       $this->assertTrue(true, $this->obj->getWordsInList());
 
       $this->obj->getList(18);
@@ -30,9 +30,9 @@ class NumbersTest extends TestCase
 
    public function testNumberReplaceFail(){
       $this->obj->getList(14);
-      $this->assertTrue(false, $this->obj->getWordsInList());
+      $this->assertFalse($this->obj->getWordsInList());
       $this->obj->getList(0);
-      $this->assertEmpty("",$this->obj->getStringList());
+      $this->assertEquals("",$this->obj->getStringList());
       
    }
 
