@@ -11,8 +11,7 @@ function numberReplace($max_array){
    for($i=5; $i<=$max_array; $i+=5){
       $output[$i]="It";
       if($i%5==0 && $i%3==0){
-              $output[$i]="INTEGRACIONES";
-         continue;
+         $output[$i]="INTEGRACIONES";
       }
    }
    
