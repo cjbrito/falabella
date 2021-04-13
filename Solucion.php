@@ -19,4 +19,4 @@ function getList($array_dim) {
     return implode($list,",");
 }
 
-echo getList(100);
+//echo getList(100);
